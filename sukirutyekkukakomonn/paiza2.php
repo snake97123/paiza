@@ -13,6 +13,7 @@
     $average = [];
     
     for ($i = 0; $i < $n - $k + 1; $i++) {
+       
          $i_avarage = 0;
          for ($j = 0; $j < $k; $j++) {
               $i_avarage += $visitor_number[$i + $j];
