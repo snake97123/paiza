@@ -30,7 +30,7 @@
         }
     }
     $first_day = array_search($max, $average) + 1;
-    // echo($first_day);
+ 
     
     echo $max_count . " " . $first_day;
 ?>
