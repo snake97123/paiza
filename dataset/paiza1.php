@@ -1,5 +1,6 @@
 <?php
   $inputs = explode(" ", trim(fgets(STDIN)));
+
   $y = $inputs[0];
   $x = $inputs[1];
   $target_y = $inputs[2];
