@@ -22,8 +22,7 @@
        $d = $inputs[3];
        if ($toranp_array[$a][$b] == $toranp_array[$c][$d]) {
           //二次元配列の削除方法の検索
-       }
-      
+       }    
   }
   
   
