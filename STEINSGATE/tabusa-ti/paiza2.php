@@ -13,5 +13,5 @@
    foreach ($new_array as $value) {
        echo $value . " "; 
    }
-   
+
 ?>
