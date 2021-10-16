@@ -12,11 +12,17 @@
     
     for ($i = 0; $i < $Q; $i++) {
          [$player, $room] = explode(" ", trim(fgets(STDIN)));
-         if(array_search($room, $is_room_number)){
+         if($is_room_number[$player] == $room){
+           echo "Yes" . "\n";
+           continue;
+         }
+         for($j = 1; $j <= $M; $j++) {
+           if($j != $player  && $is_room_number[$j] == $room){
              echo "No" . "\n";
-         } else {
-             $is_room_number[$player] = $room;
+             break;
+           } elseif($j == $M){
              echo "Yes" . "\n";
+           }
          }
     }
 ?>
