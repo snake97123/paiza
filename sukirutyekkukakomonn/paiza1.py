@@ -1,13 +1,14 @@
 n,k = map(int, input().split())
 candidate_date = list(map(int, input().split()))
 peoples = []
+max_num = []
 # print(candidate_date[1])
-for i in range(n - 1):
-    sum = candidate_date[i] + candidate_date[i + 1]
-    peoples.append(sum)
+for i in range(n - k + 1):
+    candidate_date_avg = sum(candidate_date[i:i + k])/k
+    peoples.append(candidate_date_avg)
 
-max = max(peoples)
-counts = peoples.count(max)
-index = peoples.index(max)
-
-print(index, counts)
+for i, x in enumerate(peoples):
+    if x == max(peoples):
+        max_num.append(i)
+        
+print(len(max_num), max_num[0] + 1)
