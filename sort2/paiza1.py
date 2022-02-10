@@ -19,9 +19,6 @@ def insertion_sort(a, n, h):
 
 def shell_sort(a, n, h, k):
     for i in range(k):
-        if(i == 0):
-            d = insertion_sort(a, n, h[i])
-        else:
-            d = insertion_sort(a, n, h[i])
+        insertion_sort(a, n, h[i])
 
 shell_sort(a, n, h, k)
