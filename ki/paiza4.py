@@ -6,9 +6,8 @@ for i in range(N - 1):
   adjacent_list[a - 1].append(b)
   adjacent_list[b - 1].append(a)
 
-index = 1
-for i in adjacent_list:
-  if len(i) == 1:
-    print(index)
-  index += 1
+for i in range(N):
+  if len(adjacent_list[i]) == 1:
+    print(i + 1)
+
 
