@@ -5,13 +5,13 @@ var checkPants = false
 var sumPrice = 0
 
 for _ in 0..<n {
-    let itemInfomation =  readLine()!.components(separatedBy: " ")
+    let itemInformation =  readLine()!.components(separatedBy: " ")
     
-    let itemName = itemInfomation[0]
+    let itemName = itemInformation[0]
     if checkPants == false {
     checkPants = checkName(itemName: itemName)
     }
-    let itemPrice = Int(itemInfomation[1])!
+    let itemPrice = Int(itemInformation[1])!
     sumPrice = calculatePrice(itemPrice: itemPrice)
 }
 
