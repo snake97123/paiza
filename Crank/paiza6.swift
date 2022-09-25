@@ -29,3 +29,5 @@ for _ in 0..<bGroupCount {
 for i in 0..<aGroupCount {
     print((i + 1), secondAskWorks[firstAskWorks[i + 1]])
 }
+
+
