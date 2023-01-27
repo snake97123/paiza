@@ -1,15 +1,15 @@
 import Foundation
 
 let n = Int(readLine()!)!
-let subjectWeights = readLine()!.components(separatedBy: " ")
+let subjectWeights = readLine()!.components(separatedBy: " ").map { Int($0)!}
 var maxScore = 0
 var score = 0
 
 for _ in 0..<n {
-    let subjectScore = readLine()!.components(separatedBy: " ")
+    let subjectScore = readLine()!.components(separatedBy: " ").map { Int($0)!}
     
     for i in 0..<5 {
-        score +=  Int(subjectWeights[i])! * Int(subjectScore[i])!
+        score +=  subjectWeights[i] * subjectScore[i]
     }
     
     maxScore = max(score, maxScore)
