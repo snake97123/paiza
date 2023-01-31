@@ -9,3 +9,32 @@ for i in range(N):
 for _ in range(Q):
     L, R = map(int, input().split())
     print(admission_total_person_list[R] - admission_total_person_list[L - 1])
+
+
+# 別問題の解答
+# Atcorder Lottery
+N = int(input())
+A = list(map(int, input().split()))
+Q = int(input())
+total_win_count = [0] * (N + 1)
+total_lose_count = [0] * (N + 1)
+
+for i in range(N):
+    if A[i] == 1:
+        total_win_count[i + 1] += total_win_count[i] + 1
+        total_lose_count[i + 1] = total_lose_count[i]
+    else:
+        total_lose_count[i + 1] += total_lose_count[i] + 1
+        total_win_count[i + 1] += total_win_count[i]
+        
+for _ in range(Q):
+    L, R = map(int, input().split())
+    win_count = total_win_count[R] - total_win_count[L - 1]
+    lose_count = total_lose_count[R] - total_lose_count[L - 1]
+    
+    if win_count > lose_count:
+        print("win")
+    elif win_count < lose_count:
+        print("lose")
+    else:
+        print("draw")
