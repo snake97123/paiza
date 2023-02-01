@@ -12,7 +12,7 @@ for _ in range(Q):
 
 
 # 別問題の解答
-# Atcorder Lottery
+# Atcoder Lottery
 N = int(input())
 A = list(map(int, input().split()))
 Q = int(input())
@@ -38,3 +38,23 @@ for _ in range(Q):
         print("lose")
     else:
         print("draw")
+
+# 別問題の解答
+# Atcoder Event Attendance
+D = int(input())
+N = int(input())
+each_date_participant_number = [0] * (D + 1)
+total_each_date_participant_number = [0] * (D + 1)
+
+for _ in range(N):
+    L, R = map(int, input().split())
+    each_date_participant_number[L] += 1
+    if R != D:
+        each_date_participant_number[R + 1] -= 1
+
+total_each_date_participant_number[0] = each_date_participant_number[0]
+for i in range(D):
+    total_each_date_participant_number[i + 1] = total_each_date_participant_number[i] + each_date_participant_number[i + 1]
+    
+for i in range(D):
+    print(total_each_date_participant_number[i + 1])
