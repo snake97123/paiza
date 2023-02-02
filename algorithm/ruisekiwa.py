@@ -58,3 +58,22 @@ for i in range(D):
     
 for i in range(D):
     print(total_each_date_participant_number[i + 1])
+
+# 別問題の解答
+# Atcoder Convenience Store2
+T = int(input())
+N = int(input())
+
+each_time_employees = [0] * (T + 1)
+each_time_total_employees = [0] * (T)
+for _ in range(N):
+    attendance_time, leaving_time = map(int, input().split())
+    each_time_employees[attendance_time] += 1
+    each_time_employees[leaving_time] -= 1
+
+each_time_total_employees[0] = each_time_employees[0]
+for i in range(T - 1):
+    each_time_total_employees[i + 1] = each_time_total_employees[i] + each_time_employees[i + 1]
+
+for employees_number in each_time_total_employees:
+    print(employees_number)
