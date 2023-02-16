@@ -21,10 +21,4 @@ for i in 0..<n {
     }
 }
 
-for i in 0..<monitor.count {
-    if i != (monitor.count - 1) {
-        print("\(monitor[i]) ", terminator: "")
-    } else {
-    print("\(monitor[i])")
-    }
-}
+print(monitor.joined(separator: " "))
