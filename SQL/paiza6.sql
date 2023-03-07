@@ -1,0 +1,1 @@
+SELECT * FROM ordered_menu ORDER BY ordered_id DESC, sum DESC, menu_id ASC;
