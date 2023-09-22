@@ -1,6 +1,4 @@
 <?php 
-$filePath = $_SERVER["argv"][1];
-$fp = file_get_contents($filePath);
 list($H, $W) = array_map('intval', explode(" ", trim(fgets(STDIN))));
 $graph = [];
 for($i = 0; $i < $H; $i++) {
