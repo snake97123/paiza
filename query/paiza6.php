@@ -18,14 +18,4 @@ for($i = 0; $i < $sequence_counts; $i++) {
     $sum = $sum_sequence[$count - 1];
     echo $sum . "\n";
 }
-// for ($i = 0; $i < $sequence_counts; $i++) {
-//   $count = intval(trim(fgets(STDIN)));
-//   $sum = 0;
-//   for($j = 0; $j < $count; $j++) {
-//     $sum += $number_sequence[$j];
-//   }
-//   echo $sum . "\n";
-// $partial_number_sequence = array_slice($number_sequence, 0, $count);
-// $sum = array_sum($partial_number_sequence);
-// echo $sum . "\n"; 
 ?>
