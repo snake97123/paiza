@@ -1,0 +1,1 @@
+SELECT * FROM category INNER JOIN menu ON category.category_id = menu.category_id LIMIT 10;
