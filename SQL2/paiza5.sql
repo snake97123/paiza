@@ -1,0 +1,1 @@
+SELECT menu.name, category.name, price FROM menu INNER JOIN category ON menu.category_id = category.category_id;
