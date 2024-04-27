@@ -1,0 +1,1 @@
+SELECT * FROM ordered LEFT OUTER JOIN ordered_menu ON ordered.ordered_id = ordered_menu.ordered_id LIMIT 10;
