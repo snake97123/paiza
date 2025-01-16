@@ -1,0 +1,1 @@
+SELECT ordered_id, MAX(price) FROM ordered_menu INNER JOIN menu ON ordered_menu.menu_id = menu.menu_id GROUP BY ordered_id;
