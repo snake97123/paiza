@@ -1,0 +1,1 @@
+SELECT category_id, AVG(price) FROM menu GROUP BY category_id;
