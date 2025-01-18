@@ -1,0 +1,1 @@
+SELECT category_id AS カテゴリ番号, MAX(price) AS 最高価格 FROM menu GROUP BY category_id;
