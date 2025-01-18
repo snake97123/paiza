@@ -1,0 +1,1 @@
+SELECT m.category_id,SUM(om.sum) FROM menu m INNER JOIN ordered_menu om ON m.menu_id = om.menu_id GROUP BY m.category_id
