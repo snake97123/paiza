@@ -1,0 +1,1 @@
+SELECT residence, COUNT(*) FROM customer GROUP BY residence HAVING COUNT(*) = 5;
