@@ -1,0 +1,1 @@
+SELECT m.menu_id, m.category_id, m.name, m.price FROM menu m INNER JOIN category c ON m.category_id = c.category_id WHERE c.name = 'バーガー' ORDER BY m.price DESC;
