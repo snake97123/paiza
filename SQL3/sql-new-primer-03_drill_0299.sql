@@ -1,0 +1,1 @@
+SELECT * FROM customer WHERE join_date <> '2021-05-13' ORDER BY name_yomi LIMIT 30;
