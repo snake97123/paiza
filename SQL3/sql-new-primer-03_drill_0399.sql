@@ -1,0 +1,1 @@
+SELECT * FROM ordered WHERE datetime <= '2021-12-17 12:05:00' ORDER BY datetime DESC LIMIT 10;
