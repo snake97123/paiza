@@ -1,0 +1,4 @@
+CREATE TABLE practice (
+    id INTEGER PRIMARY KEY,
+    number INTEGER NOT NULL
+);
