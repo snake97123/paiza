@@ -1,0 +1,4 @@
+CREATE TABLE practice (
+    id INTEGER PRIMARY KEY,
+    body VARCHAR(140) NOT NULL
+);
